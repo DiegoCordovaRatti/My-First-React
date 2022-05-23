@@ -1,44 +1,32 @@
-function NavBar(){
-    return (
-        <nav className="nav--container">
-            <div className="logo--container">
-                <img className="logo" src="./react-logo.png" />
-                <h3 className="logo-text">ReactFacts</h3>
-            </div>
-            <div className="nav-text--container">
-                <p className="nav-text">React Course - Project 1</p>
-            </div>
-        </nav>
-    )
-}
+import Header from "./Header"
 
-function Header(){
+function MyList(){
     return (
-        <div>
-            <h1>Fun facts about React</h1>
+        <div>            
+            <h1>Reason why I am excited to learn React</h1>
+            <ol>
+                <li>It is a very employable skill</li>
+                <li>It is easy to learn</li>
+                <li>It is a popular library</li>
+            </ol>
         </div>
     )
 }
 
-function ListItems(){
+function Footer() {
     return (
-        <div>
-            <ul>
-                <li>Was first released in 2013</li>
-                <li>Was originally created by Jordan Walke</li>
-                <li>Has well over 100K stars on GitHub</li>
-                <li>Is maintained by Facebook</li>
-                <li>Powers thousands of enterprise apps, including mobile apps</li>
-            </ul>
-        </div>
+        <footer>
+            <small>© 20xx Cordova development. All rights reserved.</small>
+        </footer>
     )
 }
 
 ReactDOM.render(
     <div>
-        <NavBar />
-        <Header />
-        <ListItems />
-    </div>,
+        {/* <Header /> */}
+        <MyList />
+        <Footer />
+    </div>, 
     document.getElementById("root")
 )
+console.log(Header)
